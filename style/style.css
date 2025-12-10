@@ -2,9 +2,11 @@
 :root {
   --bg: #07100e;
   /* deep dark */
-  --card: rgba(255, 255, 255, 0.03);
+  /* --card: rgba(255, 255, 255, 0.03); */
   --card: rgba(37, 202, 16, 0.03);
-  --card1:rgb(2, 180, 17);
+
+   --card1:rgb(2, 180, 17);
+  --card2:rgb(90, 97, 24);
   --text: #e8fff5;
   --muted: rgba(232, 255, 245, 0.7);
   --accent-1: #5eff00;
@@ -968,3 +970,4 @@ body.light-theme .social-icons-home a i {
   }
 
 }
+
