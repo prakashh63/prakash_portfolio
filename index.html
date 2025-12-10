@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Prakash — Portfolio</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style/style.css" />
+</head>
+
+<body class="dark-theme"> <!-- default dark; script will restore saved theme -->
+
+    <header class="navbar">
+        <div class="brand">
+            <a href="#home" class="logo" aria-label="Prakash homepage">
+                <span class="logo-mark">P</span>
+                <span class="logo-text">rakash</span>
+            </a>
+        </div>
+
+        <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">
+            <span></span><span></span><span></span>
+        </button>
+
+        <nav class="nav" id="site-nav">
+            <ul class="list-content">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="nav-actions">
+            <button id="theme-toggle" class="icon-btn" aria-label="Toggle theme" title="Toggle theme">
+                <i class="fa-solid fa-moon" id="theme-icon" aria-hidden="true"></i>
+            </button>
+
+            <a class="resume-download-btn" href="/img/resume.pdf" download aria-label="Download resume">
+                <i class="fa-solid fa-download"></i>
+                <span>Resume</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- HOME -->
+    <main>
+        <section class="home" id="home">
+            <div class="home-left">
+                <p class="eyebrow">Welcome to My Portfolio</p>
+                <h1>Hi, <span class="accent">I'm Prakash</span></h1>
+                <p class="lead">
+                    An enthusiastic software developer focused on creating user-friendly web experiences and reliable
+                    backend
+                    logic. Experienced in Core Java, JDBC, MySQL, and front-end technologies.
+                </p>
+
+                <div class="home-cta">
+                    <a class="btn btn-primary" href="#projects">View Projects</a>
+                    <a class="btn btn-ghost" href="#contact">Contact Me</a>
+                </div>
+
+                <div class="social-icons-home">
+                    <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div class="home-right">
+                <div class="avatar-wrap">
+                    <img src="/img/prakash_img.jpeg" alt="Prakash photo">
+                    <div class="avatar-glow"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT / EDUCATION -->
+        <section class="education" id="about">
+            <h2>My Education</h2>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="circle"></div>
+                    <div class="content">
+                        <h3>10th Standard</h3>
+                        <p>Completed at GS School with strong academic foundation.</p>
+                        <p class="muted">Percentage - 75%</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="circle"></div>
+                    <div class="content">
+                        <h3>12th Standard</h3>
+                        <p>Government Higher Secondary School — Maths & Computer Science.</p>
+                        <p class="muted">Percentage - 80%</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="circle"></div>
+                    <div class="content">
+                        <h3>B.Tech (AI & Data Science)</h3>
+                        <p>Adhi College of Engineering and Technology — CGPA 8.0 (2021 - 2025)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section class="skills" id="skills">
+            <h2>My Skills</h2>
+            <div class="skills-container">
+                <div class="skill-card"><i class="fa-brands fa-html5 skill-icon"></i>
+                    <h3>HTML</h3>
+                    <p>Semantic markup & responsive layouts</p>
+                </div>
+                <div class="skill-card"><i class="fa-brands fa-css3-alt skill-icon"></i>
+                    <h3>CSS</h3>
+                    <p>Animations, Flexbox, Grid & modern UI</p>
+                </div>
+                <div class="skill-card"><i class="fa-brands fa-js skill-icon"></i>
+                    <h3>JavaScript</h3>
+                    <p>DOM, fetch, small apps</p>
+                </div>
+                <div class="skill-card"><i class="fa-brands fa-java skill-icon"></i>
+                    <h3>Java</h3>
+                    <p>OOP, JDBC, Backend fundamentals</p>
+                </div>
+                <div class="skill-card"><i class="fa-solid fa-database skill-icon"></i>
+                    <h3>SQL</h3>
+                    <p>Joins, transactions, queries</p>
+                </div>
+                <div class="skill-card"><i class="fa-brands fa-git-alt skill-icon"></i>
+                    <h3>Git</h3>
+                    <p>Version control & collaboration</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section class="projects" id="projects" aria-labelledby="projects-title">
+            <div class="projects-inner">
+                <h2 id="projects-title">Projects</h2>
+
+                <div class="projects-grid" role="list">
+                    <!-- Project 1: clickable card opens in new tab -->
+                    <article class="project-card project-link" role="listitem">
+                        <div class="project-media">
+                            <a href="https://lung-cancer-detection-app-5ygo.onrender.com/" target="_blank"
+                                rel="noopener noreferrer" aria-label="Open AI Lung Cancer Detection demo">
+                                <img src="/img/lung_cancer.png" alt="AI Lung Cancer Detection preview" loading="lazy" />
+                            </a>
+                            <div class="media-overlay"><span class="badge">AI • Deep Learning</span></div>
+                        </div>
+
+                        <div class="project-body">
+                            <h3 class="project-title">AI-powered Lung Cancer Detection (CT Images)</h3>
+                            <p class="project-desc">End-to-end deep learning pipeline: preprocessing, segmentation,
+                                classification, explainability and evaluation.</p>
+                            <ul class="tech-list" aria-hidden="true">
+                                <li>Python</li>
+                                <li>Flask</li>
+                                <li>CNN</li>
+                                <li>Data Augmentation</li>
+                            </ul>
+
+                            <div class="project-actions">
+                                <a class="btn btn-outline" href="https://lung-cancer-detection-app-5ygo.onrender.com/"
+                                    target="_blank" rel="noopener">Live Demo</a>
+                                <a class="btn btn-primary"
+                                    href="https://github.com/prakashh63/lung_cancer_detection_app" target="_blank"
+                                    rel="noopener">View Repo</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="project-card" role="listitem">
+                        <div class="project-media">
+                            <img src="/img/atm_simulation.png" alt="ATM Simulation preview" loading="lazy" />
+                            <div class="media-overlay"><span class="badge">Java • JDBC</span></div>
+                        </div>
+
+                        <div class="project-body">
+                            <h3 class="project-title">ATM Simulation using JDBC</h3>
+                            <p class="project-desc">Realistic ATM simulation with secure login, transactions, and DAO
+                                layers backed by MySQL. Includes unit tests and layered architecture.</p>
+                            <ul class="tech-list" aria-hidden="true">
+                                <li>Java</li>
+                                <li>JDBC</li>
+                                <li>MySQL</li>
+                            </ul>
+
+                            <div class="project-actions">
+                                <a class="btn btn-outline" href="#" target="_blank" rel="noopener">Live Demo</a>
+                                <a class="btn btn-primary" href="#" target="_blank" rel="noopener">View Repo</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 placeholder (balanced grid) -->
+                    <article class="project-card placeholder" role="listitem">
+                        <div class="project-media">
+                            <img src="/img/prakash_img.jpeg" alt="Project preview placeholder" loading="lazy" />
+                            <div class="media-overlay"><span class="badge">Porfolio</span></div>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">My Portfolio</h3>
+                            <p class="project-desc">I am an enthusiastic software developer passionate about building 
+                                user-friendly web applications and reliable backend systems. Skilled in Core Java, JDBC, 
+                                MySQL, HTML, CSS, JavaScript, and Python,I specialize in developing end-to-end
+                                 projects with clean code and modern design principles.</p>
+                            <div class="project-actions">
+                                <a class="btn btn-outline" href="https://github.com/prakashh63" target="_blank"
+                                    rel="noopener">GitHub</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section class="contact" id="contact">
+            <div class="contact-inner">
+                <h2 class="contact-title">Contact Me</h2>
+                <p class="contact-sub">Let’s connect! Whether you have a project, question, or collaboration in mind —
+                    reach out.</p>
+
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <h3>Get in Touch</h3>
+                        <p>Email: <a href="mailto:prakashmokesh2004@gmail.com">prakashmokesh2004@gmail.com</a></p>
+                        <p>Phone: <a href="tel:+916374471139">+91 6374471139</a></p>
+
+                        <div class="social-icons">
+                            <a href="#" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+
+                    <form class="contact-form" action="#"
+                        onsubmit="event.preventDefault(); alert('Message sent (demo)');">
+                        <input type="text" placeholder="Your Name" required />
+                        <input type="email" placeholder="Your Email" required />
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                        <button class="send-btn" type="submit">Send Message <i
+                                class="fa-solid fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- back to top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up">
+
+        </i></button>
+
+    <script src="script/script.js"></script>
+</body>
+
+</html>
