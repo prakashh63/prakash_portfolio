@@ -2,7 +2,7 @@
 :root {
   --bg: #07100e;
   /* deep dark */
-  /* --card: rgba(255, 255, 255, 0.03); */
+  --card: rgba(255, 255, 255, 0.03);
   --card: rgba(37, 202, 16, 0.03);
 
    --card1:rgb(2, 180, 17);
@@ -970,4 +970,5 @@ body.light-theme .social-icons-home a i {
   }
 
 }
+
 
