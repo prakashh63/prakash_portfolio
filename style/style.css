@@ -366,13 +366,9 @@ main {
 
 .avatar-wrap img {
   width: 100%;
-  height: 100%;
-  object-fit: contain;     /* show full image */
-  object-position: center; /* keep face centered */
-  border-radius: 50%;
-  transform: scale(0.9);   /* adjust zoom if needed */
-  transition: transform .8s var(--ease);
-  background: #000;        /* fill empty space (optional) */
+  height: auto;
+  max-height: 100%;
+  object-fit: contain;
 }
 
 /* infinite subtle float animation for avatar image */
@@ -967,4 +963,5 @@ body.light-theme .social-icons-home a i {
     font-size: 22px
   }
 }
+
 
