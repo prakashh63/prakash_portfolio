@@ -368,16 +368,7 @@ main {
   width: 100%;
   height: 100%;
   object-fit: contain;     /* show full image */
-  /* object-position: center; /* keep face centered */ 
-  border-radius: 50%;
-  /* transform: scale(0.9);   adjust zoom if needed */
-  transform: scale(1);     /* normal */
-  transition: transform .8s var(--ease);
-  background: #000;        /* fill empty space (optional) */
- /* object-position: center top;     move face up */
-  object-position: center 10%;
-/* object-position: center 30%;
-object-position: center 40%; */
+ 
 }
 
 /* infinite subtle float animation for avatar image */
@@ -972,6 +963,7 @@ body.light-theme .social-icons-home a i {
     font-size: 22px
   }
 }
+
 
 
 
