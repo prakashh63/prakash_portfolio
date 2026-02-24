@@ -350,7 +350,7 @@ main {
 }
 
 .avatar-wrap {
-  width: 320px;
+  width: 500px;
   height: 320px;
   border-radius: 50%;
   position: relative;
@@ -963,5 +963,6 @@ body.light-theme .social-icons-home a i {
     font-size: 22px
   }
 }
+
 
 
